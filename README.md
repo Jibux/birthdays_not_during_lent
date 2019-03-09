@@ -11,10 +11,10 @@ number_of_years_to_check: number (default is 100)
 ```
 
 ## Info
-* Earliest easter day: 22nd of March
-* Latest easter day: 25th of April
-* Earliest ash wednesday: 4th of February
-* Latest ash wednesday: 10th of March
+* Earliest Easter day: 22nd of March
+* Latest Easter day: 25th of April
+* Earliest Ash Wednesday: 4th of February
+* Latest Ash Wednesday: 10th of March
 
 ## Examples
 ```

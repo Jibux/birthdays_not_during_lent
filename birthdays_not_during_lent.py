@@ -37,10 +37,10 @@ delta_leap = relativedelta(days=47)
 leap_year = 1904
 person_date_of_birth_on_leap_year = date(leap_year,month_of_birth,day_of_birth)
 
-# Earliest easter day: 22/03
-# Latest easter day: 25/04
-# Earliest ash wednesday: 04/02
-# Latest ash wednesday: 10/03
+# Earliest Easter day: 22/03
+# Latest Easter day: 25/04
+# Earliest Ash Wednesday: 04/02
+# Latest Ash Wednesday: 10/03
 latest_easter_day = date(leap_year,4,25)
 earliest_easter_day = date(leap_year,3,22)
 latest_ash_wednesday = latest_easter_day - delta
