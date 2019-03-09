@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 
 
-from dateutil.relativedelta import *
-from dateutil.easter import *
-from dateutil.rrule import *
-from dateutil.parser import *
-from datetime import *
-
 import calendar
 import sys
+
+from dateutil.relativedelta import *
+from dateutil.easter import *
+from datetime import *
 
 number_of_years_to_check = 100
 
 def usage():
     print('Usage:',sys.argv[0],'day_of_birth number_of_years_to_check')
-    print('day_of_birth: yyyy-mm-dd')
+    print('day_of_birth format: yyyy-mm-dd')
 
 if len(sys.argv) < 2:
     usage()
