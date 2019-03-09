@@ -46,11 +46,6 @@ earliest_easter_day = date(leap_year,3,22)
 latest_ash_wednesday = latest_easter_day - delta
 earliest_ash_wednesday = earliest_easter_day - delta_leap
 
-print("Earliest easter day:",earliest_easter_day.day,earliest_easter_day.month)
-print("Latest easter day:",latest_easter_day.day,latest_easter_day.month)
-print("Earliest ash wednesday:",earliest_ash_wednesday.day,earliest_ash_wednesday.month)
-print("Latest ash wednesday:",latest_ash_wednesday.day,latest_ash_wednesday.month)
-
 if person_date_of_birth_on_leap_year >= latest_easter_day or person_date_of_birth_on_leap_year < earliest_ash_wednesday:
     print("You will never have your birthday during Lent.")
     sys.exit(0)
@@ -72,42 +67,5 @@ for year in range(year_of_birth, year_of_birth + number_of_years_to_check):
 
     if ash_wednesday > person_birthday or easter_day <= person_birthday:
         print(year)
-
-
-
-
-
-
-
-
-
-#def divmod2(x, y):
-#    q, r = divmod(x, y)
-#    if y<0:
-#        return q+1, r+abs(y)
-#    return q, r
-#
-## cycle de Méton
-#(tmp,n) = divmod2(year,19)
-## centaine et rang de l'année
-#(c,u) = divmod2(year,100)
-## siècle bissextile 
-#(s,t) = divmod2(c,4)
-## cycle de proemptose
-#(p,tmp) = divmod2(c+8,25)
-## proemptose
-#(q,tmp) = divmod2(c-p+1,3)
-## épacte
-#(tmp,e) = divmod2(19*n+c-s-q+15,30)
-## année bissextile
-#(b,d) = divmod2(u,4)
-## lettre dominicale 
-#(tmp,L) = divmod2(2*t+2*b-e-d+32,7)
-## correction
-#(h,tmp) = divmod2(n+11*e+22*L,451)
-## résultat
-#(m,j) = divmod2(e+L-7*h+114,31)
-#
-#print(j+1,m)
 
 

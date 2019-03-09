@@ -10,3 +10,24 @@ day_of_birth format: yyyy-mm-dd
 number_of_years_to_check: default=100
 ```
 
+## Info
+* Earliest easter day: 22nd of March
+* Latest easter day: 25th of April
+* Earliest ash wednesday: 4th of February
+* Latest ash wednesday: 10th of March
+
+## Examples
+```
+./birthdays_not_during_lent.py 2018-3-5 20
+2019
+2030
+```
+```
+./birthdays_not_during_lent.py 2018-1-1
+You will never have your birthday during Lent.
+```
+```
+./birthdays_not_during_lent.py 2018-3-11
+You will always have your birthday during Lent.
+```
+
